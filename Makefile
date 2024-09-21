@@ -1,6 +1,8 @@
 run:
 	PYTHONDONTWRITEBYTECODE=1 \
-	poetry run uvicorn \
-	--host 0.0.0.0 \
-	--port 80 \
-	open_server:app
+	poetry run app
+
+run-docker:
+	docker build -t open_server .
+	docker run -p 0.0.0.0:80:80 --rm open_server
+
