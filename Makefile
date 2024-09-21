@@ -4,5 +4,5 @@ run:
 
 run-docker:
 	docker build -t open_server .
-	docker run -p 0.0.0.0:80:80 --rm open_server
+	docker run -it -p 0.0.0.0:80:80 --rm open_server
 
