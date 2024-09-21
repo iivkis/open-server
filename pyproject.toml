@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "open-server"
+version = "0.1.0"
+description = ""
+authors = ["iivkis <razmolodinivan@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+fastapi = "^0.115.0"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+app = "open_server.main:main"
